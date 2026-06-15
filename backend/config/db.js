@@ -13,7 +13,7 @@ const connectDB=async()=>{
         // We use the 'conn' object to access details about the connection, like the host name.
         console.log(`mongoDB connected:${conn.connection.host}`);
     }catch(error){
-        console.error(`error: ${error.message}`.red.bold);
+        console.error(`error: ${error.message}`);
             // Exit the Node.js process with a "failure" code (1).
            // This is crucial because if the app can't connect to its database,
            // it's fundamentally broken and should not continue to run.
