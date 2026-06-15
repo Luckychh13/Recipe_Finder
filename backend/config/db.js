@@ -1,7 +1,7 @@
 // Import the Mongoose library, which is our Object Data Modeling (ODM) tool for MongoDB.
 const mongoose=require('mongoose');
 //import color package
-const colors=require('colors');
+
 // Define an asynchronous function to connect to the database.
 const connectDB=async()=>{
     try{
@@ -11,7 +11,7 @@ const connectDB=async()=>{
         //  The dotenv package (which we'll call in server.js) makes this variable available.
         const conn=await mongoose.connect(process.env.MONGO_URI);
         // We use the 'conn' object to access details about the connection, like the host name.
-        console.log(`mongoDB connected:${conn.connection.host}`.cyan.underline);
+        console.log(`mongoDB connected:${conn.connection.host}`);
     }catch(error){
         console.error(`error: ${error.message}`.red.bold);
             // Exit the Node.js process with a "failure" code (1).
