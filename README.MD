@@ -113,6 +113,6 @@ You need to have the following software installed on your machine:
 
 ## Contact
 
-Lucky Chhabra- [luckychh005@example.com](mailto:your.email@example.com)
+
 
 Project Link: [https://github.com/your-username/your-repo-name](https://github.com/your-username/your-repo-name)
